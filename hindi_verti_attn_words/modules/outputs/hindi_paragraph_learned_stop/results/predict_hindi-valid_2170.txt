@@ -1,0 +1,10 @@
+nb_samples: 3
+nb_chars: 16
+cer: 0.3125
+nb_words: 7
+wer: 0.5714
+diff_len: [0, 0, 0]
+diff_len-mean_abs: 0.0
+worst_cer: [[3, 31], [2, 16], [0, 25]]
+total_time: 2.022
+sample_time: 0.674

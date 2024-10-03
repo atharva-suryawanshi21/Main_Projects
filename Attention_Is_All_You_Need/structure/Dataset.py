@@ -59,8 +59,11 @@ class English_Hindi_Dataset(Dataset):
         ]
 
         hindi_vocabulary.extend(punctuation) 
-        print(f"Total unique characters: English-> {len(set(english_vocabulary))} Hindi-> {len(set(hindi_vocabulary))}")
-        return list(set(english_vocabulary)), list(set(hindi_vocabulary))
+        english_vocabulary = sorted(set(english_vocabulary))
+        hindi_vocabulary = sorted(set(hindi_vocabulary))
+
+        print(f"Total unique characters: English-> {len(english_vocabulary)} Hindi-> {len(hindi_vocabulary)}")
+        return english_vocabulary, hindi_vocabulary
     
     def language_and_index_map(self):
         index_to_hindi = {k:v for k,v in enumerate(self.hi_vocab)}
