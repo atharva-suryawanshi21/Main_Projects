@@ -192,7 +192,18 @@ class English_Hindi_Dataset(Dataset):
         print("\tDataset Tokenized and Pading is Done")
         return en_tokenized, hi_tokenized
 
-            
+    # def update_dicts_for_translation(self,en_vocab, hi_vocab,en_to_index,index_to_en,hi_to_index,index_to_hi):      
+    #     self.en_vocab = en_vocab
+    #     self.hi_vocab = hi_vocab
+        
+    #     self.index_to_hindi = index_to_hi  
+    #     self.hindi_to_index = hi_to_index 
+    #     self.index_to_english = index_to_en 
+    #     self.english_to_index = en_to_index
+        
+        
+        
+        
 if __name__ == "__main__":
     dataset = English_Hindi_Dataset('Dataset/train.en/train.en', 
                                     'Dataset/train.hi/train.hi',
